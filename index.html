@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Information</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- 
+      Load the JavaScript file.
+      The "defer" attribute tells the browser to download the script
+      now but wait until the HTML has finished loading before running it.
+      This prevents JavaScript from trying to access elements
+      that haven't been created yet.
+   -->
+  
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <header>
+      <h1>JavaScript – Random Information from an Array</h1>
+    </header>
+
+    <main>
+      <p>
+        Each time you click the button, JavaScript will randomly select one of my
+        cats from an array and display the name on the page.
+      </p>
+
+      <p>
+        When the button is clicked, it runs a function called <code>showInfo()</code>.
+        That function generates a random number, uses it to choose one item from the
+        array, and then places the result inside the element with the ID
+        <code>info</code>.
+      </p>
+
+      <p>This exercise demonstrates how these pieces work together:</p>
+
+      <ul>
+        <li>An <strong>array</strong> stores several possible values.</li>
+        <li>A <strong>function</strong> runs when the button is clicked.</li>
+        <li>A <strong>random number</strong> is used to choose one item from the array.</li>
+        <li>JavaScript updates the page by changing the content inside an HTML element.</li>
+      </ul>
+    </main>
+
+    <!-- Two-column layout: button on the left, result on the right -->
+    <section class="two-columns">
+
+      <!-- Column 1: Button that triggers the JavaScript function -->
+      <div>
+        <!-- 
+             NOTE: This button uses an inline onclick attribute.
+
+             In modern web development, JavaScript is usually attached
+             using event listeners instead of inline HTML attributes.
+
+             We are using onclick here because it is easier to understand
+             for beginners. Later exercises will introduce event listeners.
+        -->
+        
+
+      </div>
+
+      <!-- 
+           Column 2: This is where JavaScript will display the result.
+
+           The id="info" allows JavaScript to locate this element
+           using document.getElementById().
+      -->
+      <div>Click the button to see a random cat name</div>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
