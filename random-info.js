@@ -1,6 +1,6 @@
 // create an array of information
-  var  = [
-   "Ivan",
+var infoArray =  [
+  "Ivan",
   "Cookie",
   "Vlad",
   "Demeter",
@@ -8,19 +8,19 @@
   "Gomez"
 ];
 
-
+function showInfo() {
 
 // generate a random number based on the number of items in the array
-  var randomNumber =
+  var randomNumber = Math.floor(Math.random() * infoArray.length);
 
 // select one random item from the array
-  var randomInfo =
+  var randomInfo = infoArray[randomNumber];
 
 // find the element on the page
-  var infoElement =
+  var infoElement = document.getElementById("info");
 
 // display the random item
+  infoElement.textContent = randomInfo;
 
-
-
+}
 

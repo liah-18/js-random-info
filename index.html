@@ -7,6 +7,7 @@
   <title>Random Information</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
+
   <!-- 
       Load the JavaScript file.
       The "defer" attribute tells the browser to download the script
@@ -14,7 +15,7 @@
       This prevents JavaScript from trying to access elements
       that haven't been created yet.
    -->
-  
+   <script src="random-info.js" defer></script>
 </head>
 
 <body>
@@ -53,6 +54,7 @@
 
       <!-- Column 1: Button that triggers the JavaScript function -->
       <div>
+
         <!-- 
              NOTE: This button uses an inline onclick attribute.
 
@@ -62,7 +64,7 @@
              We are using onclick here because it is easier to understand
              for beginners. Later exercises will introduce event listeners.
         -->
-        
+        <button onclick="showInfo()">Show a Cat</button>
 
       </div>
 
@@ -72,7 +74,7 @@
            The id="info" allows JavaScript to locate this element
            using document.getElementById().
       -->
-      <div>Click the button to see a random cat name</div>
+      <div id="info">Click the button to see a random cat name</div>
 
     </section>
 
